@@ -6,15 +6,11 @@ import {
   Server, 
   Database, 
   Layout, 
-  Cpu,
+ 
   BarChart3,
   ShoppingBag,
   MessageSquare,
-  Workflow,
-  FileText,
-  Lock,
   GitBranch,
-  Terminal,
   Globe
 } from 'lucide-react';
 import { NavItem, Project, Experience, Skill, SocialLink } from './types';

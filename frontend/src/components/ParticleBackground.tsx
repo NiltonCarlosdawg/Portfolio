@@ -33,6 +33,13 @@ const ParticleBackground: React.FC = () => {
       speed: number;
 
       constructor() {
+        this.x = 0;
+        this.y = 0;
+        this.lastX = 0;
+        this.lastY = 0;
+        this.vx = 0;
+        this.vy = 0;
+        this.speed = 0;
         this.reset();
         this.color = colors[Math.floor(Math.random() * colors.length)];
       }
@@ -66,6 +73,7 @@ const ParticleBackground: React.FC = () => {
       }
 
       draw() {
+        if (!ctx) return;
         ctx.beginPath();
         ctx.strokeStyle = this.color;
         ctx.lineWidth = 1.2;
